@@ -1,0 +1,10 @@
+kind: PersitentVolumeClaim
+apiVersion: v1
+metadata:
+  name: mysql-volumeclaim
+spec: 
+  accessMode:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Gi
